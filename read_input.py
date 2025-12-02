@@ -9,3 +9,14 @@ def read_day_01(example = False):
             directions.append(line[0])
             nums.append(int(line[1:]))
     return directions, nums
+
+def read_day_02(example = False):
+    file = f"input/input_02{'_example' if example else ''}.txt"
+
+    ranges = []
+    with open(file) as infile:
+        for line in infile.readlines():
+            for range in line.split(","):
+                ranges.append(tuple(int(i) for i in range.split("-")))
+
+    return ranges
