@@ -23,7 +23,6 @@ print(f"Part 1 Password: {password}")
 pos = 50
 password = 0 
 for d, n in zip(directions, nums):
-    print(f"{d}{n}")    
     new_pos = operators[d](pos, n)
     
     mod, rem = divmod(new_pos, 100)
@@ -34,7 +33,6 @@ for d, n in zip(directions, nums):
     elif d == "L" and pos == 0:
         password -= 1
     pos = rem
-    print(pos, password)
     
 
 print(f"Part 2 Password: {password}")
