@@ -20,3 +20,11 @@ def read_day_02(example = False):
                 ranges.append(tuple(int(i) for i in range.split("-")))
 
     return ranges
+
+def read_day_03(example = False):
+    file = f"input/input_03{'_example' if example else ''}.txt"
+
+    with open(file) as infile:
+        banks = [line.strip() for line in infile.readlines()]
+
+    return banks
