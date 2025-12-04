@@ -28,3 +28,12 @@ def read_day_03(example = False):
         banks = [line.strip() for line in infile.readlines()]
 
     return banks
+
+
+def read_day_04(example = False):
+    file = f"input/input_04{'_example' if example else ''}.txt"
+
+    with open(file) as infile:
+        rows = [line.strip() for line in infile.readlines()]
+
+    return rows
