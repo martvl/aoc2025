@@ -21,14 +21,6 @@ n_fresh_ingredients = find_fresh_ingredients(ranges, ingredients)
 print(f"Answer part 1: {n_fresh_ingredients}")
 
 
-
-
-def ranges_overlap(range_1, range_2):
-    min_1, max_1 = range_1
-    min_2, max_2 = range_2
-
-    if min_2 >= max_2:
-        pass
     
 
 def find_all_fresh_ingredients(ranges):
