@@ -37,3 +37,19 @@ def read_day_04(example = False):
         rows = [line.strip() for line in infile.readlines()]
 
     return rows
+
+
+def read_day_05(example = False):
+    file = f"input/input_05{'_example' if example else ''}.txt"
+
+    ranges = []
+    ingredients = []
+    with open(file) as infile:
+        for line in infile.readlines():
+            if "-" in line: 
+                ranges.append(tuple(int(i) for i in line.split("-")))
+            elif line.strip() == "":
+                continue
+            else:
+                ingredients.append(int(line.strip()))
+    return ranges, ingredients
