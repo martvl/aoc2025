@@ -53,3 +53,14 @@ def read_day_05(example = False):
             else:
                 ingredients.append(int(line.strip()))
     return ranges, ingredients
+
+def read_day_06(example = False):
+    file = f"input/input_06{'_example' if example else ''}.txt"
+    
+    problems = []
+    with open(file) as infile:
+        for line in infile.readlines():
+            problems.append(line.split())
+            
+    return problems
+            
