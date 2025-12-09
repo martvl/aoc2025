@@ -74,4 +74,13 @@ def read_day_07(example = False):
             diagram.append(row.strip())
             
     return diagram
-            
+
+def read_day_08(example = False):
+    file = f"input/input_08{'_example' if example else ''}.txt"
+
+    vectors = []
+    with open(file) as infile:
+        for row in infile.readlines():
+            vectors.append(tuple(int(s) for s in row.split(",")))
+    
+    return vectors
