@@ -64,3 +64,14 @@ def read_day_06(example = False):
             
     return problems
             
+
+def read_day_07(example = False):
+    file = f"input/input_07{'_example' if example else ''}.txt"
+    
+    diagram = []
+    with open(file) as infile:
+        for row in infile.readlines():
+            diagram.append(row.strip())
+            
+    return diagram
+            
