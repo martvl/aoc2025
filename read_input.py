@@ -60,7 +60,7 @@ def read_day_06(example = False):
     problems = []
     with open(file) as infile:
         for line in infile.readlines():
-            problems.append(line.split())
+            problems.append(line)
             
     return problems
             
