@@ -14,7 +14,7 @@ all_pairs = [pair for pair in sorted(all_pairs, key=lambda x: distance_between(x
 
 # Part 1
 circuits = []
-for i in range(10):
+for i in range(1000):
     conn = all_pairs[i]
     box_present_in_circuit = [index for index, c in enumerate(circuits) if conn[0] in c or conn[1] in c]
     if len(box_present_in_circuit) == 2:
